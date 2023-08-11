@@ -1,0 +1,23 @@
+.shop {
+  &__heading {
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-bottom: 80px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .shop {
+    &__heading {
+      margin-bottom: 40px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

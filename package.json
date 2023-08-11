@@ -1,0 +1,11 @@
+{
+  "name": "fakestore",
+  "version": "1.0.0",
+  "description": "practice, use fake store api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vs1uongnd",
+  "license": "ISC"
+}

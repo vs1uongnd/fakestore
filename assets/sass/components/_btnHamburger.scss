@@ -1,0 +1,36 @@
+.btn-hamburger {
+  display: block;
+  padding: 24px;
+  position: relative;
+}
+.btn-hamburger > div {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: $cl-text-1;
+  transition: 0.5s;
+}
+.hamburger--1 {
+  top: -8px;
+}
+.hamburger--3 {
+  top: 8px;
+}
+.btn-hamburger.click .hamburger {
+  background-color: $cl-text;
+}
+.btn-hamburger.click .hamburger--1 {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.btn-hamburger.click .hamburger--2 {
+  opacity: 0;
+}
+.btn-hamburger.click .hamburger--3 {
+  transform: rotate(45deg);
+  top: 0;
+}

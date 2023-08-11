@@ -1,0 +1,53 @@
+.side-bar {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: $cl-white;
+  z-index: 10;
+  top: 0;
+  left: 70%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  &.side-bar-show {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  &-wrapper {
+    padding: 64px 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .input-search {
+      width: 100%;
+      border-bottom: 1px solid $cl-text;
+    }
+    .menu {
+      .nav__link {
+        display: block;
+        padding: 8px 0;
+        color: $cl-text;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          padding-left: 24px;
+          background: $cl-text-1;
+        }
+      }
+    }
+    .header__buttons {
+      justify-content: center;
+
+      gap: 20px;
+      button,
+      a {
+        position: relative;
+        padding: 16px 32px;
+        .btn-cart__quantity {
+          top: 0;
+          right: 10px;
+        }
+      }
+    }
+  }
+}

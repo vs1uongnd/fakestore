@@ -1,0 +1,13 @@
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  .btn-pagination {
+    padding: 8px 16px;
+    &:disabled {
+      background: $cl-text-1;
+    }
+  }
+}

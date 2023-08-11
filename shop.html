@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      defer
+      type="module"
+      src="./assets/js/controllerProducts.js"
+    ></script>
+
+    <title>Fake Store</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container header-top-wrapper">
+          <a href="index.html" class="logo">PRETTY GAL</a>
+          <nav class="nav-bar">
+            <ul class="menu">
+              <li><a href="index.html" class="nav__link">Home</a></li>
+              <li><a href="shop.html" class="nav__link">Shop</a></li>
+              <li><a href="#" class="nav__link">Sale</a></li>
+              <li><a href="#" class="nav__link">Customer Care</a></li>
+              <li><a href="#" class="nav__link">Stockists</a></li>
+            </ul>
+          </nav>
+          <div class="btn-control-sidebar btn-hamburger">
+            <div>
+              <div class="hamburger hamburger--1"></div>
+              <div class="hamburger hamburger--2"></div>
+              <div class="hamburger hamburger--3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container header-bottom-wrapper">
+          <form class="header__form">
+            <label for="input-search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <input
+              type="text"
+              class="input-search"
+              id="input-search"
+              placeholder="Search..."
+            />
+          </form>
+          <div class="header__buttons">
+            <button class="btn-login">
+              <i class="fa-regular fa-user"></i><span>Log In</span>
+            </button>
+            <a href="cart.html" class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="btn-cart__quantity">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section shop">
+        <div class="container">
+          <h3 class="shop__heading">SHOP</h3>
+          <div class="shop__wrapper">
+            <div class="filter">
+              <!-- <h3 class="filter__heading">Filter by</h3>
+              <div class="option">
+                <div class="option__header">
+                  <h4 class="option__title">Category</h4>
+                  <button class="option__show">-</button>
+                </div>
+                <div class="option__body categories">
+                  <button class='category'>All</button>
+                  <button class='category'>men's clothing</button>
+                  <button class='category'>women's clothing</button>
+                  <button class='category'>electronic</button>
+                </div>
+              </div>
+              <div class="option">
+                <div class="option__header">
+                  <h4 class="option__title">Price</h4>
+                  <button class="option__show">-</button>
+                </div>
+                <div class="option__body">
+                  <input class="input-price" type="range" min="14.99" max="129.00" value="129.00" />
+                  <div class="input-range-limit">
+                    <span class="max">$129.00</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="products-and-sort">
+              <div class="sort-wrapper">
+                <!-- <div class="type-of-list">
+                  <button class="type-grid">
+                    <i class="fa-solid fa-table-cells"></i>
+                  </button>
+                  <button class="type-rows">
+                    <i class="fa-solid fa-list"></i>
+                  </button>
+                </div>
+                <p class="quantity-products">0 products found</p>
+                <hr />
+                <form>
+                  <label for="sort-input">Sort by</label
+                  ><select name="sort" id="sort-input" class="sort-input">
+                    <option value="price-lowest">Price (lowest)</option>
+                    <option value="price-highest">Price (highest)</option>
+                    <option value="rating-lowest">Rating (lowest)</option>
+                    <option value="rating-highest">Rating (highest)</option>
+                    <option value="name-a">Name (a - z)</option>
+                    <option value="name-z">Name (z - a)</option>
+                  </select>
+                </form> -->
+              </div>
+              <div class="products">
+                <!-- <article class="product">
+                  <a href="">
+                    <div class="product__header">
+                      <img
+                        src="./assets/images/cda177_5b63fc47d8984bd094328cc5cf2045ef.webp"
+                        alt="product-image"
+                        lazy
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h4 class="product__name">MIDI PLEATED SKIRT</h4>
+                      <p class="product__price">$59.00</p>
+                    </div>
+                  </a>
+                </article> -->
+              </div>
+              <div class="pagination">
+                <!-- <button type="button" class="btn-pagination" data-page='${i + 1}' ${
+                  this._data.pageCurrent === i + 1 ? "disabled" : ""
+                }>${i + 1}</button>` -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-bar">
+        <div class="side-bar-wrapper">
+          <form class="header__form">
+            <label for="input-search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <input
+              type="text"
+              class="input-search"
+              id="input-search"
+              placeholder="Search..."
+            />
+          </form>
+          <ul class="menu">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="shop.html" class="nav__link">Shop</a></li>
+            <li><a href="#" class="nav__link">Sale</a></li>
+            <li><a href="#" class="nav__link">Customer Care</a></li>
+            <li><a href="#" class="nav__link">Stockists</a></li>
+          </ul>
+          <div class="header__buttons">
+            <button class="btn-login">
+              <i class="fa-regular fa-user"></i><span>Log In</span>
+            </button>
+            <a href="cart.html" class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
+              <span class="btn-cart__quantity">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <div class="footer__item">
+          <h4 class="item__heading">STAY CONNECTED</h4>
+          <div class="item__content socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer__item">
+          <h4 class="item__heading">BE OUR FRIEND</h4>
+          <div class="item__content subscribe">
+            <form action="">
+              <input type="email" placeholder="Enter your email here" />
+            </form>
+          </div>
+        </div>
+        <div class="footer__item">
+          <h4 class="item__heading">NEED ASSISTANCE?</h4>
+          <div class="item__content assistance">
+            <p>123-456-7890</p>
+            <a href="info@mysite.com">info@mysite.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

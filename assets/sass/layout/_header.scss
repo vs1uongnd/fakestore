@@ -1,0 +1,134 @@
+.header {
+  &.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  &-top {
+    background-color: $cl-bg;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        color: $cl-white;
+        font-weight: 700;
+        letter-spacing: 6px;
+      }
+      .nav-bar {
+        .menu {
+          display: flex;
+          gap: 28px;
+          li {
+            display: inline-block;
+          }
+          .nav__link {
+            display: inline-block;
+            padding: 0 10px;
+            color: $cl-text-1;
+          }
+        }
+      }
+      .btn-control-sidebar {
+        display: none;
+      }
+    }
+  }
+  &-bottom {
+    background: $cl-text-1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.header__form {
+  position: relative;
+  label {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+  }
+  .input-search {
+    padding: 4px 32px;
+    outline: none;
+    border: none;
+    &:hover {
+      border-bottom: 1px solid $cl-text;
+    }
+  }
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  .btn-login,
+  .btn-cart {
+    position: relative;
+    color: $cl-text;
+    padding: 4px 8px;
+    span {
+      margin-left: 6px;
+    }
+    .btn-cart__quantity {
+      top: -8px;
+      right: -16px;
+    }
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .header {
+    &-top {
+      &-wrapper {
+        .nav-bar {
+          .menu {
+            gap: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .header {
+    &-top {
+      height: 60px;
+      &-wrapper {
+        .nav-bar {
+          display: none;
+        }
+        .btn-control-sidebar {
+          display: block;
+          z-index: 100;
+        }
+      }
+    }
+    &-bottom {
+      display: none;
+    }
+  }
+}
+
+.btn-cart__quantity {
+  position: absolute;
+  display: none;
+  background-color: $cl-bg-1;
+  color: $cl-text-1;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+}

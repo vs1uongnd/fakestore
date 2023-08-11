@@ -1,0 +1,14 @@
+.btn--primary {
+  display: block;
+  text-align: center;
+  min-width: 200px;
+  background: $cl-text;
+  color: $cl-white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.3s linear;
+  &:hover {
+    color: $cl-text;
+    background: $cl-white;
+  }
+}

@@ -1,0 +1,24 @@
+.hero-banner {
+  height: calc(100vh - 136px);
+  background: center/cover no-repeat url("../images/hero-banner.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px 50px;
+  }
+  &__heading {
+    font-family: "time new roman";
+  }
+  &__link {
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .hero-banner {
+    height: calc(100vh - 60px);
+  }
+}

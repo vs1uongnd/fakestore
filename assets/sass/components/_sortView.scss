@@ -1,0 +1,39 @@
+.sort-wrapper {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 32px;
+  .type-of-list {
+    display: flex;
+    gap: 0.5rem;
+    button {
+      font-size: 20px;
+      i {
+        color: $cl-text;
+      }
+    }
+  }
+
+  .quantity-products {
+    margin-bottom: 0;
+  }
+
+  .sort-select {
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .sort-wrapper {
+    grid-template-columns: auto 1fr 1fr;
+    column-gap: 8px;
+    hr {
+      display: none;
+    }
+    .sort-select {
+      //   padding: 0;
+      padding: 4px 2px;
+    }
+  }
+}
