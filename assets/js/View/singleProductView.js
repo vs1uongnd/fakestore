@@ -35,7 +35,7 @@ class SingleProductView extends View {
       const quantityInput = this._parentElement.querySelector(
         ".single-product__quantity"
       );
-      if (!quantityInput.value)
+      if (!quantityInput.value.trim())
         return quantityInput.classList.add("show-error");
 
       const product = {
